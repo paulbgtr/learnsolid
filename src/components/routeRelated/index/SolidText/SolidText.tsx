@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { SolidLetter } from "./SolidLetter";
 import { Explanation } from "./Explanation";
 
@@ -29,9 +29,17 @@ export const SolidText = () => {
         <SolidLetter setLetterOnHover={handleSetLetterOnHover} letter="D" />
       </section>
 
-      {letterOnHover && (
-        <Explanation message={solidAbbreviation[letterOnHover]} />
-      )}
+      {/* hack to make the explanation appear/disappear without making the layout jump  */}
+      <div
+        className="min-h-[100px] transition-opacity duration-700"
+        style={{ opacity: letterOnHover ? 1 : 0 }}
+      >
+        {letterOnHover ? (
+          <Explanation message={solidAbbreviation[letterOnHover]} />
+        ) : (
+          <div></div>
+        )}
+      </div>
     </>
   );
 };
