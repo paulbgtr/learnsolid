@@ -10,6 +10,8 @@ export const SolidLetter = ({
   const handleMouseEnter = () => setLetterOnHover(letter);
   const handleMouseLeave = () => setLetterOnHover(null);
 
+  if (letter.length !== 1) throw new Error("Letter must be a single character");
+
   return (
     <Link href={letter}>
       <span
