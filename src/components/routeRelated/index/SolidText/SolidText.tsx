@@ -20,7 +20,7 @@ export const SolidText = () => {
   };
 
   return (
-    <>
+    <div>
       <section>
         <SolidLetter setLetterOnHover={handleSetLetterOnHover} letter="S" />
         <SolidLetter setLetterOnHover={handleSetLetterOnHover} letter="O" />
@@ -40,6 +40,6 @@ export const SolidText = () => {
           <div></div>
         )}
       </div>
-    </>
+    </div>
   );
 };
