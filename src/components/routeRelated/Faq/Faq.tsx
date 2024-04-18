@@ -1,7 +1,7 @@
 import { QuestionsAndAnswersContainer } from "./QuestionsAndAnswersContainer";
 import type { FAQItem } from "@/app/types/FAQItem";
 
-export const Faq = () => {
+export const FAQ = () => {
   const questionsAndAnswers: FAQItem[] = [
     {
       question: "What is SOLID?",

@@ -1,6 +1,6 @@
 import { SolidText } from "@/components/routeRelated/index/SolidText/SolidText";
 import { NavigationArrow } from "../components/routeRelated/index/NavigationArrow";
-import { Faq } from "@/components/routeRelated/Faq/Faq";
+import { FAQ } from "@/components/routeRelated/FAQ/FAQ";
 
 export default function Home() {
   return (
@@ -10,7 +10,7 @@ export default function Home() {
         <NavigationArrow />
       </section>
       <section className="h-screen grid justify-center pt-24">
-        <Faq />
+        <FAQ />
       </section>
     </>
   );
