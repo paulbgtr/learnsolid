@@ -1,7 +1,9 @@
+import { FAQItem } from "@/app/types/FAQItem";
+
 export const QuestionsAndAnswers = ({
   questionsAndAnswers,
 }: {
-  questionsAndAnswers: { question: string; answer: string }[];
+  questionsAndAnswers: FAQItem[];
 }) => {
   return (
     <>
