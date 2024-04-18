@@ -1,6 +1,11 @@
 import { QuestionsAndAnswersContainer } from "./QuestionsAndAnswersContainer";
 import type { FAQItem } from "@/app/types/FAQItem";
 
+/**
+ * Core component of the FAQ page.
+ * It renders a list of common questions and answers by passing them to the QuestionsAndAnswersContainer component.
+ */
+
 export const FAQ = () => {
   const questionsAndAnswers: FAQItem[] = [
     {
